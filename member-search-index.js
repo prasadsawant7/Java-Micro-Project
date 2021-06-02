@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.company","c":"Java_MicroProject","l":"Java_MicroProject()","u":"%3Cinit%3E()"},{"p":"com.company","c":"Java_MicroProject","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
