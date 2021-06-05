@@ -68,6 +68,12 @@ class Students{
     public void setSubject3Marks(int subject3Marks) {
         this.subject3Marks = subject3Marks;
     }
+    
+    public void getPercentage(int sm1, int sm2, int sm3){
+        int marksPerPercentage = 300/100;
+        float percentage = (float) (sm1 + sm2 + sm3)/marksPerPercentage;
+        System.out.println("Percentage: " + percentage);
+    }
 }
 
 /**
@@ -130,7 +136,9 @@ public class Java_MicroProject {
                 System.out.println(students[i].getMobileNo());
                 System.out.println(students[i].getSubject1Marks());
                 System.out.println(students[i].getSubject2Marks());
-                System.out.println(students[i].getSubject3Marks() + "\n");
+                System.out.println(students[i].getSubject3Marks());
+                students[i].getPercentage(Integer.parseInt(sub1),Integer.parseInt(sub2),Integer.parseInt(sub3));
+                System.out.println();
                 n++;
             } catch (IOException e) {
                 e.printStackTrace();
